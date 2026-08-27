@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cooper Tenney</title>
+<meta name="description" content="Projects by Cooper Tenney — data science and product, Stanford.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --bg:#FCFBF9;
+    --ink:#14100D;
+    --muted:#6E665D;
+    --faint:#9A9188;
+    --rule:#E3DDD4;
+    --accent:#A6421F;
+  }
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    font-size:16px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:88px 28px 120px}
+
+  /* ---------- masthead ---------- */
+  h1{
+    font-family:'Instrument Serif',Georgia,serif;font-weight:400;
+    font-size:clamp(40px,8vw,58px);line-height:1;letter-spacing:-.01em;
+    margin:0 0 18px;
+  }
+  .intro{font-size:17px;color:var(--muted);margin:0 0 22px;max-width:56ch}
+  .intro em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--ink);font-size:19px}
+  .links{
+    display:flex;flex-wrap:wrap;gap:0 18px;margin:0 0 4px;padding:0;list-style:none;
+    font-family:'IBM Plex Mono',monospace;font-size:12.5px;
+  }
+  .links a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:1px}
+  .links a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+  /* ---------- section ---------- */
+  .sec{
+    font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--faint);
+    margin:76px 0 0;padding-bottom:10px;border-bottom:1px solid var(--rule);
+  }
+
+  /* ---------- project list ---------- */
+  .list{margin:0;padding:0;list-style:none}
+  .item{
+    display:grid;grid-template-columns:78px 1fr;gap:0 24px;
+    padding:26px 0;border-bottom:1px solid var(--rule);
+  }
+  .yr{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--faint);
+    padding-top:5px;white-space:nowrap;
+  }
+  .t{
+    font-family:'Instrument Serif',Georgia,serif;font-weight:400;
+    font-size:24px;line-height:1.2;margin:0 0 7px;letter-spacing:-.005em;
+  }
+  .t a{color:var(--ink);text-decoration:none;background-image:linear-gradient(var(--accent),var(--accent));
+       background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;
+       transition:background-size .25s ease}
+  .t a:hover{color:var(--accent);background-size:100% 1px}
+  .d{margin:0 0 11px;color:var(--muted);font-size:15px;max-width:58ch}
+  .d strong{color:var(--ink);font-weight:500}
+  .tags{
+    display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;
+    font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--faint);
+  }
+  .tags li{border:1px solid var(--rule);padding:2px 7px;border-radius:2px}
+  .out{
+    font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--accent);
+    text-decoration:none;margin-left:2px;white-space:nowrap;
+  }
+  .out:hover{text-decoration:underline;text-underline-offset:3px}
+
+  footer{
+    margin-top:64px;font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;color:var(--faint);
+  }
+
+  @media (max-width:600px){
+    .wrap{padding:56px 22px 88px}
+    .item{grid-template-columns:1fr;gap:0}
+    .yr{padding:0 0 6px}
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#12100E;--ink:#F0EBE4;--muted:#A69C91;--faint:#736A61;
+          --rule:#2A2621;--accent:#E0764A;}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <h1>Cooper Tenney</h1>
+  <p class="intro">
+    Data science at Stanford, class of 2028. I build things that answer questions I
+    have about sports, pricing, and how software gets used — mostly
+    <em>because I wanted the answer</em>.
+  </p>
+  <ul class="links">
+    <li><a href="mailto:[YOUR EMAIL]">Email</a></li>
+    <li><a href="https://www.linkedin.com/in/cooper-tenney">LinkedIn</a></li>
+    <li><a href="[YOUR GITHUB URL]">GitHub</a></li>
+    <li><a href="[LINK TO RESUME PDF]">Résumé</a></li>
+  </ul>
+
+  <h2 class="sec">Projects</h2>
+  <ul class="list">
+
+    <li class="item">
+      <div class="yr">2026</div>
+      <div>
+        <h3 class="t"><a href="[WRITEUP OR REPO LINK]">Quantifying the Caitlin Clark Externality</a></h3>
+        <p class="d">
+          A difference-in-differences study isolating one player's effect on WNBA
+          attendance and revenue from league-wide growth. Found
+          <strong>$30M+ in surplus revenue</strong> and <strong>8,000+ additional
+          fans per game</strong> — value the Indiana Fever captured and the player
+          did not.
+        </p>
+        <ul class="tags">
+          <li>diff-in-diff</li><li>XGBoost</li><li>Python</li><li>4 seasons scraped</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2025</div>
+      <div>
+        <h3 class="t"><a href="[REPO LINK]">NFL Draft Outcome Classifier</a></h3>
+        <p class="d">
+          A multiclass model predicting pro outcomes for draft prospects, deliberately
+          constrained to <strong>draft-day-available inputs only</strong> — trading
+          hindsight accuracy for something usable at the moment teams actually pick.
+          ~26% lift over baseline on position-specific models.
+        </p>
+        <ul class="tags">
+          <li>logistic regression</li><li>web scraping</li><li>Python</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2025 — now</div>
+      <div>
+        <h3 class="t"><a href="[REPO LINK]">Pricing Audit Platform</a></h3>
+        <p class="d">
+          Ingests arbitrary datasets and runs automated data-quality and pricing audits —
+          column detection, outlier analysis, feature importance — behind a Streamlit
+          interface that lets a non-technical user configure a model run and read the
+          diagnostics.
+        </p>
+        <ul class="tags">
+          <li>Streamlit</li><li>scikit-learn</li><li>pipeline design</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2025</div>
+      <div>
+        <h3 class="t"><a href="[REPO LINK]">Fantasy Football Draft Board</a></h3>
+        <p class="d">
+          A live-draft ranking tool with custom tiering, built because every existing
+          option was either paywalled or unusable during an actual draft. Designed the
+          interface from scratch.
+        </p>
+        <ul class="tags">
+          <li>JavaScript</li><li>interface design</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2025</div>
+      <div>
+        <h3 class="t"><a href="[REPO LINK]">Roster Check-In</a></h3>
+        <p class="d">
+          Attendance tracking for Stanford Club Baseball, replacing a clipboard and a
+          group chat. Built for a specific ~40-person program with specific problems.
+        </p>
+        <ul class="tags">
+          <li>JavaScript</li><li>internal tool</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2025</div>
+      <div>
+        <h3 class="t"><a href="[REPO LINK]">Dues Reconciliation</a></h3>
+        <p class="d">
+          Matches incoming Zelle transfers against a member roster to close out a dues
+          cycle without manual bookkeeping. Unglamorous, and the thing that saved the
+          most hours.
+        </p>
+        <ul class="tags">
+          <li>Python</li><li>payment matching</li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+
+  <h2 class="sec">Elsewhere</h2>
+  <ul class="list">
+    <li class="item">
+      <div class="yr">2024</div>
+      <div>
+        <h3 class="t">Diamond Dollars Case Competition</h3>
+        <p class="d">
+          Won SABR's 2024 competition with a model estimating the expected run value of
+          foul balls, and a "foul ball ability" metric for evaluating swing decisions.
+          Presented to MLB front-office executives.
+        </p>
+        <ul class="tags"><li>SABR</li><li>1st place</li></ul>
+      </div>
+    </li>
+  </ul>
+
+  <footer>Last updated [MONTH YEAR]</footer>
+
+</main>
+</body>
+</html>
