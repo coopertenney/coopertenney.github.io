@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cooper Tenney</title>
-<meta name="description" content="Projects by Cooper Tenney — data science and product, Stanford.">
+<meta name="description" content="Cooper Tenney — data science and economics at Stanford. Projects in sports analytics, pricing, B2B software, and tools for organizations I am part of.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -80,6 +80,8 @@
   }
   .out:hover{text-decoration:underline;text-underline-offset:3px}
 
+  .role{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--faint);margin:-4px 0 9px}
+  .d + .d{margin-top:-4px}
   footer{
     margin-top:64px;font-family:'IBM Plex Mono',monospace;
     font-size:11.5px;color:var(--faint);
@@ -101,15 +103,120 @@
 
   <h1>Cooper Tenney</h1>
   <p class="intro">
-    Data science at Stanford, class of 2028. I build things that answer questions I
-    have about sports, pricing, and how software gets used — mostly
-    <em>because I wanted the answer</em>.
+    Data science and economics at Stanford, class of 2028. I build things that answer
+    questions I have about sports, pricing, and how organizations actually run — mostly
+    <em>because I wanted the answer</em>. Currently co-founding
+    <a href="https://neostratai.com" style="color:var(--ink)">NeoStrat</a>.
   </p>
   <ul class="links">
-    <li><a href="mailto:[YOUR EMAIL]">Email</a></li>
+    <li><a href="mailto:ctenney@stanford.edu">Email</a></li>
     <li><a href="https://www.linkedin.com/in/cooper-tenney">LinkedIn</a></li>
-    <li><a href="[YOUR GITHUB URL]">GitHub</a></li>
-    <li><a href="[LINK TO RESUME PDF]">Résumé</a></li>
+    <li><a href="https://github.com/cooper-tenney">GitHub</a></li>
+    <li><a href="resume.pdf">Résumé</a></li>
+  </ul>
+
+  <h2 class="sec">Now</h2>
+  <ul class="list">
+
+    <li class="item">
+      <div class="yr">2026 — now</div>
+      <div>
+        <h3 class="t"><a href="https://neostratai.com">NeoStrat</a></h3>
+        <p class="role">Co-founder &amp; CEO · product and build</p>
+        <p class="d">
+          AI-native strategic planning for nonprofits. Stakeholders answer interview
+          questions by voice on their own time; the platform synthesizes themes with
+          verbatim quotes, a SWOT, and a draft strategic plan that leaders review async.
+          <strong>Every voice, one plan, two weeks</strong> — instead of a six-month
+          consulting engagement. Four-person founding team; MVP shipped and demoed,
+          first design partner in September 2026.
+        </p>
+        <ul class="tags">
+          <li>Next.js</li><li>Supabase</li><li>Claude API</li><li>Deepgram</li><li>Vercel</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2026 — now</div>
+      <div>
+        <h3 class="t">Stanford Football — Player Valuation Tool</h3>
+        <p class="role">Built to the Assistant GM's PRD · April 2026 – present</p>
+        <p class="d">
+          Takes a recruit profile and returns calibrated year-by-year probabilities of four
+          career outcomes (bust / depth / starter / impact), then a dollar valuation of a
+          proposed NIL offer. Trained on <strong>45k+ recruit profiles</strong> and 230k
+          player-seasons from CollegeFootballData plus PFF grades. Replaced circular
+          percentile labels with absolute thresholds, which exposed a real risk spread
+          across eligibility years, and rebuilt retention curves for the transfer-portal era.
+          Ships as a single self-contained HTML file for projecting in a room.
+        </p>
+        <ul class="tags">
+          <li>TypeScript</li><li>ordinal regression</li><li>CFBD + PFF</li><li>AUC 0.72 vs 0.69 baseline</li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+
+  <h2 class="sec">Work</h2>
+  <ul class="list">
+
+    <li class="item">
+      <div class="yr">2026</div>
+      <div>
+        <h3 class="t">Pareto Agent</h3>
+        <p class="role">Product Management · employee #6 · June – September 2026</p>
+        <p class="d">
+          $3.5M-funded startup automating B2B renewals. Ran discovery across 15+ customer
+          calls and found that <strong>admin loss</strong> — the champion leaving — was the
+          worst pain point, which became our first feature. Owned an agentic loop that
+          locates a responsive champion and a prototyped customer-facing dashboard with
+          telemetry. Shipped to design partner LeanData and iterated on their feedback.
+          Operated as PM, designer, and engineer; demoed 15+ times to VCs and partners.
+        </p>
+        <ul class="tags">
+          <li>product</li><li>agents</li><li>TypeScript</li><li>Postgres</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2025 — 26</div>
+      <div>
+        <h3 class="t"><a href="https://github.com/cooper-tenney/pricing-analysis">Stanford Open Consulting Society</a></h3>
+        <p class="role">Data Science Analyst · September 2025 – June 2026</p>
+        <p class="d">
+          Designed a pricing analytics platform that ingests arbitrary business datasets and
+          runs automated data-quality and pricing audits: column detection, leakage and
+          ID-column removal, outlier analysis, XGBoost with TF-IDF for text, Bayesian
+          hyperparameter search, and PDF diagnostics — behind a web UI a non-technical
+          user can operate.
+        </p>
+        <ul class="tags">
+          <li>Python</li><li>XGBoost</li><li>Optuna</li><li>FastAPI</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2025</div>
+      <div>
+        <h3 class="t">Norwest · Redpoint Ventures</h3>
+        <p class="role">Growth Equity Research Intern · VC Summer Analyst</p>
+        <p class="d">
+          At Redpoint, analyzed 150+ defense-tech startups across AI, autonomy, and robotics
+          to map the market and recommend sourcing sectors. At Norwest, built screening
+          models across sports analytics and software businesses. Sitting in on founder
+          pitches redirected me toward building at an early-stage company rather than
+          evaluating from the outside.
+        </p>
+        <ul class="tags">
+          <li>market maps</li><li>screening models</li>
+        </ul>
+      </div>
+    </li>
+
   </ul>
 
   <h2 class="sec">Projects</h2>
@@ -118,13 +225,52 @@
     <li class="item">
       <div class="yr">2026</div>
       <div>
-        <h3 class="t"><a href="[WRITEUP OR REPO LINK]">Quantifying the Caitlin Clark Externality</a></h3>
+        <h3 class="t"><a href="https://phipsicalbeta.github.io/pkp-calbeta/">Chapter HQ</a></h3>
+        <p class="role">Operations platform for a 105-member Stanford fraternity</p>
+        <p class="d">
+          Started as a full member-facing dashboard for dues, house points, events, and
+          files with Stripe integration. Rescoped after the chapter president said
+          member adoption would be too hard: cut it down to <strong>single-purpose admin
+          tools</strong> the exec board actually uses. One Supabase backend, four schemas
+          (identity, points, dues, attendance), DB-enforced roles, bank-feed payment
+          matching, 91 members imported. Points and dues modules in use today.
+        </p>
+        <ul class="tags">
+          <li>Next.js</li><li>Supabase</li><li>Postgres RLS</li><li>Stripe</li><li>Google SSO</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2026</div>
+      <div>
+        <h3 class="t"><a href="https://phipsicalbeta.github.io/">ChapterRoll</a></h3>
+        <p class="role">Native iOS roll call · TestFlight</p>
+        <p class="d">
+          SwiftUI app for taking chapter attendance in badge-number order: first roll,
+          second roll that prioritizes absences and auto-flags late arrivals, CSV export.
+          Works fully offline; opt-in sync to Chapter HQ via PKCE OAuth and Supabase with
+          an idempotent retry queue. Zero third-party SDKs, no tracking. Built with a
+          chapter brother.
+        </p>
+        <ul class="tags">
+          <li>Swift</li><li>SwiftUI</li><li>iOS 17+</li><li>offline-first</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2026</div>
+      <div>
+        <h3 class="t"><a href="https://github.com/cooper-tenney/wnba-externality-model">Quantifying the Caitlin Clark Externality</a></h3>
+        <p class="role">DATASCI 112 final project</p>
         <p class="d">
           A difference-in-differences study isolating one player's effect on WNBA
-          attendance and revenue from league-wide growth. Found
-          <strong>$30M+ in surplus revenue</strong> and <strong>8,000+ additional
-          fans per game</strong> — value the Indiana Fever captured and the player
-          did not.
+          attendance and revenue from league-wide growth. Scraped four seasons of WNBA and
+          NBA data; tuned KNN, random forest, and XGBoost via 5-fold CV to a 1,590-ticket
+          RMSE on pre-breakout data. Found <strong>$32M in surplus ticket revenue</strong>
+          and <strong>8,600+ additional fans per game</strong> — value the Indiana Fever
+          captured and the player did not.
         </p>
         <ul class="tags">
           <li>diff-in-diff</li><li>XGBoost</li><li>Python</li><li>4 seasons scraped</li>
@@ -133,14 +279,71 @@
     </li>
 
     <li class="item">
+      <div class="yr">2026</div>
+      <div>
+        <h3 class="t">Kalshi Liquidity-Rewards Bot</h3>
+        <p class="role">Three days, one post-mortem</p>
+        <p class="d">
+          Kalshi pays a per-market pool for orders resting on the book. Reimplemented their
+          scoring to rank 2,374 live programs by estimated dollars per hour, then built a
+          bot that posts thin 1¢ walls where one side of the book is empty, so the market
+          qualifies and the wall captures most of the pool. Greedy capital allocator,
+          lognormal theo gate on FX brackets, kill switch, systemd deploy on a US VPS.
+          Ran with $102. <strong>Got filled nine times and lost $90.</strong> Halted it,
+          wrote up why. Fills are a cost, and the cost was real.
+        </p>
+        <ul class="tags">
+          <li>Python</li><li>market making</li><li>RSA-PSS auth</li><li>WebSocket</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2026</div>
+      <div>
+        <h3 class="t"><a href="https://github.com/ctenney05/buyer-valuation">The Renewals Hub</a></h3>
+        <p class="role">Buyer-side renewal portal · demo built at Pareto</p>
+        <p class="d">
+          A read-only portal that gives a B2B buyer everything they need to evaluate a
+          renewal without a sales call: contract history, renewal options, a countdown,
+          year-over-year MSA changes, an ROI calculator pre-filled with their data, and a
+          chatbot linked to qualification context. The seller sees engagement without
+          having to check in.
+        </p>
+        <ul class="tags">
+          <li>JavaScript</li><li>product prototype</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2026</div>
+      <div>
+        <h3 class="t">Property Manager Sync</h3>
+        <p class="role">One-day build</p>
+        <p class="d">
+          Automates a property manager's coordination loop: reads bookings from an Airbnb
+          iCal feed, syncs them to Postgres, and hands guest and date info to the partner
+          resort so they can set up key access. The sync never overwrites anything a human
+          typed.
+        </p>
+        <ul class="tags">
+          <li>TypeScript</li><li>Supabase</li><li>Next.js</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="item">
       <div class="yr">2025</div>
       <div>
-        <h3 class="t"><a href="[REPO LINK]">NFL Draft Outcome Classifier</a></h3>
+        <h3 class="t"><a href="https://github.com/cooper-tenney/cs109-nfl-prospect-model">NFL Draft Outcome Classifier</a></h3>
+        <p class="role">CS109 probability challenge</p>
         <p class="d">
           A multiclass model predicting pro outcomes for draft prospects, deliberately
           constrained to <strong>draft-day-available inputs only</strong> — trading
           hindsight accuracy for something usable at the moment teams actually pick.
-          ~26% lift over baseline on position-specific models.
+          ~26% lift over baseline on position-specific models. Drew interest from Stanford
+          Football staff and became the precursor to the valuation tool above.
         </p>
         <ul class="tags">
           <li>logistic regression</li><li>web scraping</li><li>Python</li>
@@ -149,25 +352,9 @@
     </li>
 
     <li class="item">
-      <div class="yr">2025 — now</div>
-      <div>
-        <h3 class="t"><a href="[REPO LINK]">Pricing Audit Platform</a></h3>
-        <p class="d">
-          Ingests arbitrary datasets and runs automated data-quality and pricing audits —
-          column detection, outlier analysis, feature importance — behind a Streamlit
-          interface that lets a non-technical user configure a model run and read the
-          diagnostics.
-        </p>
-        <ul class="tags">
-          <li>Streamlit</li><li>scikit-learn</li><li>pipeline design</li>
-        </ul>
-      </div>
-    </li>
-
-    <li class="item">
       <div class="yr">2025</div>
       <div>
-        <h3 class="t"><a href="[REPO LINK]">Fantasy Football Draft Board</a></h3>
+        <h3 class="t">Fantasy Football Draft Board</h3>
         <p class="d">
           A live-draft ranking tool with custom tiering, built because every existing
           option was either paywalled or unusable during an actual draft. Designed the
@@ -182,29 +369,48 @@
     <li class="item">
       <div class="yr">2025</div>
       <div>
-        <h3 class="t"><a href="[REPO LINK]">Roster Check-In</a></h3>
+        <h3 class="t">Roster Check-In &amp; Dues Reconciliation</h3>
+        <p class="role">Stanford Club Baseball</p>
         <p class="d">
-          Attendance tracking for Stanford Club Baseball, replacing a clipboard and a
-          group chat. Built for a specific ~40-person program with specific problems.
+          Attendance tracking for a ~40-person program, replacing a clipboard and a group
+          chat. Then a script matching incoming Zelle transfers against the member roster to
+          close out a dues cycle without manual bookkeeping. Unglamorous, and the thing that
+          saved the most hours.
         </p>
         <ul class="tags">
-          <li>JavaScript</li><li>internal tool</li>
+          <li>JavaScript</li><li>Python</li><li>internal tools</li>
         </ul>
       </div>
     </li>
 
+  </ul>
+
+  <h2 class="sec">Small tools I use</h2>
+  <ul class="list">
+
     <li class="item">
-      <div class="yr">2025</div>
+      <div class="yr">2026</div>
       <div>
-        <h3 class="t"><a href="[REPO LINK]">Dues Reconciliation</a></h3>
+        <h3 class="t">Multi-terminal todo</h3>
         <p class="d">
-          Matches incoming Zelle transfers against a member roster to close out a dues
-          cycle without manual bookkeeping. Unglamorous, and the thing that saved the
-          most hours.
+          A CLI and tiny local web UI over one append-only JSONL event log, flock-guarded so
+          several coding-agent terminals in separate git worktrees can add and close tasks
+          concurrently. Rebuilds a markdown view on every mutation.
         </p>
-        <ul class="tags">
-          <li>Python</li><li>payment matching</li>
-        </ul>
+        <ul class="tags"><li>Python</li><li>event log</li></ul>
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="yr">2026</div>
+      <div>
+        <h3 class="t">Spending Dashboard</h3>
+        <p class="d">
+          Single-file personal finance dashboard: CSV import, category-by-month chart,
+          merchant breakdown, category review, backup and restore. Everything stays in the
+          browser.
+        </p>
+        <ul class="tags"><li>vanilla JS</li><li>d3</li><li>IndexedDB</li></ul>
       </div>
     </li>
 
@@ -219,14 +425,25 @@
         <p class="d">
           Won SABR's 2024 competition with a model estimating the expected run value of
           foul balls, and a "foul ball ability" metric for evaluating swing decisions.
-          Presented to MLB front-office executives.
+          Only high school team selected; presented to MLB front-office executives.
         </p>
         <ul class="tags"><li>SABR</li><li>1st place</li></ul>
       </div>
     </li>
+    <li class="item">
+      <div class="yr">ongoing</div>
+      <div>
+        <h3 class="t">Around campus</h3>
+        <p class="d">
+          Captain, Stanford Club Baseball. Executive board, Phi Kappa Psi. VP Recruitment,
+          Interfraternity Council. Before Stanford: varsity baseball captain and newspaper
+          editor-in-chief at Branson.
+        </p>
+      </div>
+    </li>
   </ul>
 
-  <footer>Last updated [MONTH YEAR]</footer>
+  <footer>Last updated September 2026</footer>
 
 </main>
 </body>
